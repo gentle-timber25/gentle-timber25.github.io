@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>禁止的爱善良的小在钱西瓜-禁忌题材阅读手册</title>
+<meta name="description" content="禁止的爱善良的小在钱西瓜讲的是一段被规则与金钱夹住的禁忌关系。本文整理题材脉络、人物设定、章节更新、读者体验与常见疑问，含2026年11月4日版本变动与三类分歧记录。">
+<meta name="keywords" content="禁止的爱善良的小在钱西瓜">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2a4a'/%3E%3Cpath d='M20 18c-4 8-4 20 0 28' stroke='%23e8735a' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M44 18c4 8 4 20 0 28' stroke='%23e8735a' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23f2c46b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c2a4a;
+  --ink-2:#3a4763;
+  --muted:#6c7791;
+  --line:#dfe3ec;
+  --paper:#f7f5f1;
+  --card:#ffffff;
+  --accent:#c4452f;
+  --accent-soft:#f6e3dd;
+  --gold:#b8873c;
+  --gold-soft:#f6ecd9;
+  --teal:#2b6f6a;
+  --teal-soft:#e0eeec;
+  --r:10px;
+  --r-lg:16px;
+  --sh:0 1px 2px rgba(28,42,74,.06),0 6px 18px rgba(28,42,74,.06);
+  --fs-xs:.78rem;
+  --fs-s:.86rem;
+  --fs-m:1rem;
+  --fs-l:1.18rem;
+  --fs-xl:1.5rem;
+  --fs-2xl:2.05rem;
+  --sp:clamp(14px,2.4vw,22px);
+  --ann-h:46px;
+  --hdr-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink-2);
+  font-family:"Noto Serif SC","Songti SC","SimSun",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:var(--fs-m);
+  line-height:1.78;
+  -webkit-text-size-adjust:100%;
+}
+h1,h2,h3,h4{color:var(--ink);line-height:1.35;margin:0}
+p{margin:0 0 .9em}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin-bottom:.35em}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+[id]{scroll-margin-top:calc(var(--ann-h) + var(--hdr-h) + 14px)}
+
+/* ---------- sticky stack ---------- */
+.ann{
+  position:sticky;top:0;z-index:60;
+  background:var(--ink);color:#f4efe6;
+  font-size:var(--fs-s);
+  display:flex;align-items:center;gap:10px;
+  padding:9px var(--sp);
+  min-height:var(--ann-h);
+}
+.ann .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:0 0 auto;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ann b{color:#fff;font-weight:600}
+.ann a{color:#f2c46b;white-space:nowrap}
+.hdr{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(247,245,241,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  min-height:var(--hdr-h);
+}
+.hdr-in{
+  max-width:1180px;margin:0 auto;
+  display:flex;align-items:center;gap:16px;
+  padding:10px var(--sp);
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;color:var(--ink);font-weight:700}
+.brand:hover{text-decoration:none}
+.brand svg{width:34px;height:34px;flex:0 0 auto}
+.brand-name{font-size:1.02rem;letter-spacing:.02em;line-height:1.2}
+.brand-name small{display:block;font-size:.62rem;font-weight:400;color:var(--muted);letter-spacing:.14em;margin-top:2px}
+.nav-toggle{
+  display:none;margin-left:auto;background:none;border:1px solid var(--line);
+  border-radius:8px;padding:7px 11px;cursor:pointer;font-size:var(--fs-s);color:var(--ink);
+}
+.nav-toggle:focus-visible{outline:3px solid var(--gold)}
+.nav{display:flex;flex-wrap:wrap;gap:2px 4px;font-size:var(--fs-s);margin-left:auto}
+.nav a{
+  padding:6px 9px;border-radius:7px;color:var(--ink-2);white-space:nowrap;
+  transition:background .16s,color .16s;
+}
+.nav a:hover{background:var(--accent-soft);color:var(--accent);text-decoration:none}
+.nav a.on{background:var(--ink);color:#fff}
+.hdr-side{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:8px;overflow:hidden}
+.search input{border:0;padding:7px 9px;font-size:var(--fs-s);width:132px;background:none;color:var(--ink)}
+.search input:focus{outline:none}
+.search button{border:0;background:var(--ink);color:#fff;padding:7px 10px;cursor:pointer;font-size:var(--fs-s)}
+.search button:hover{background:var(--accent)}
+.btn-entry{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--accent);color:#fff;border:0;
+  padding:8px 13px;border-radius:8px;font-size:var(--fs-s);cursor:pointer;
+  transition:transform .16s,background .16s;
+}
+.btn-entry:hover{background:#a83621;text-decoration:none;transform:translateY(-2px)}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp)}
+main{padding-bottom:56px}
+section[id]{padding-top:calc(var(--ann-h) + var(--hdr-h) + 34px);margin-top:-14px}
+.sec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 6px}
+.sec-h h2{font-size:var(--fs-xl)}
+.sec-h .sec-tag{font-size:var(--fs-xs);color:var(--muted);letter-spacing:.1em;border-bottom:2px solid var(--gold);padding-bottom:1px}
+.sec-lead{color:var(--muted);font-size:var(--fs-s);margin:0 0 18px;max-width:70ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh)}
+.pad{padding:clamp(16px,2.6vw,26px)}
+
+/* ---------- hero ---------- */
+.hero{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(18px,3vw,40px);
+  align-items:center;
+  padding:clamp(26px,4vw,50px) var(--sp) clamp(24px,4vw,44px);
+  max-width:1180px;margin:0 auto;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:var(--fs-xs);letter-spacing:.16em;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:4px 12px;margin-bottom:14px;
+}
+.hero h1{font-size:var(--fs-2xl);line-height:1.22;margin:0 0 14px;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-desc{font-size:1rem;color:var(--ink-2);max-width:52ch}
+.hero-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid var(--line);background:#fff;color:var(--ink);
+  padding:8px 14px;border-radius:8px;font-size:var(--fs-s);cursor:pointer;
+  transition:transform .16s,border-color .16s;
+}
+.btn-ghost:hover{border-color:var(--gold);text-decoration:none;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
+.hero-stats b{display:block;font-size:1.4rem;color:var(--ink);font-variant-numeric:tabular-nums}
+.hero-stats span{font-size:var(--fs-xs);color:var(--muted)}
+.hero-art{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;
+  background:linear-gradient(150deg,#1c2a4a 0%,#2b3a5c 58%,#3d3149 100%);
+  min-height:300px;box-shadow:var(--sh);
+}
+.hero-art svg{position:absolute;inset:0;width:100%;height:100%}
+.hero-art .caption{
+  position:absolute;left:14px;bottom:12px;right:14px;
+  font-size:var(--fs-xs);color:#dfd7c8;letter-spacing:.04em;
+  display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;
+}
+
+/* ---------- grids ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.split{display:grid;grid-template-columns:1.6fr .9fr;gap:20px;align-items:start}
+
+/* overview cards */
+.ov-card{border-top:3px solid var(--gold);padding:16px 16px 8px;background:#fff;border:1px solid var(--line);border-radius:var(--r);}
+.ov-card h3{font-size:1.02rem;margin-bottom:6px}
+.ov-card p{font-size:var(--fs-s);color:var(--ink-2);margin-bottom:8px}
+.ov-card .meta{font-size:var(--fs-xs);color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+
+/* featured */
+.feat{display:grid;grid-template-columns:1.25fr 1fr;gap:0;overflow:hidden}
+.feat-main{padding:clamp(16px,2.4vw,24px)}
+.feat-main .kicker{font-size:var(--fs-xs);color:var(--accent);letter-spacing:.1em;margin-bottom:8px}
+.feat-main h3{font-size:1.22rem;margin-bottom:8px}
+.feat-side{border-left:1px solid var(--line);background:#fbfaf7;padding:clamp(14px,2vw,20px);display:flex;flex-direction:column;gap:12px}
+.mini-item{border-bottom:1px dashed var(--line);padding-bottom:10px}
+.mini-item:last-child{border-bottom:0;padding-bottom:0}
+.mini-item a{font-size:var(--fs-s);font-weight:600;color:var(--ink)}
+.mini-item span{display:block;font-size:var(--fs-xs);color:var(--muted);margin-top:2px}
+
+/* list */
+.tl{list-style:none;padding:0;margin:0}
+.tl li{
+  display:grid;grid-template-columns:82px 1fr;gap:14px;
+  padding:12px 0;border-bottom:1px solid var(--line);
+}
+.tl li:last-child{border-bottom:0}
+.tl time{font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px}
+.tl h3{font-size:.98rem;margin-bottom:3px}
+.tl p{font-size:var(--fs-s);margin:0;color:var(--ink-2)}
+.tl .tag{display:inline-block;font-size:.7rem;background:var(--teal-soft);color:var(--teal);padding:1px 7px;border-radius:4px;margin-left:6px;vertical-align:1px}
+
+/* channels */
+.chans{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.chans a{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:var(--fs-s);color:var(--ink);
+  transition:border-color .16s,transform .16s;
+}
+.chans a b{color:var(--accent);font-variant-numeric:tabular-nums;font-size:var(--fs-xs)}
+.chans a:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-2px)}
+
+/* deep read */
+.deep{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:24px;align-items:start}
+.article{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(18px,3vw,32px)}
+.article h3{font-size:1.1rem;margin:26px 0 10px;padding-left:11px;border-left:4px solid var(--accent)}
+.article h3:first-child{margin-top:0}
+.article p{font-size:.98rem}
+.article .claim{
+  background:var(--gold-soft);border:1px solid #e6d4b0;border-radius:var(--r);
+  padding:12px 14px;font-size:var(--fs-s);margin:14px 0;
+}
+.article .claim b{color:var(--ink)}
+.compare{width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:12px 0}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare th{background:#f4f2ec;color:var(--ink);font-weight:600}
+.quote-card{
+  border-left:4px solid var(--teal);background:var(--teal-soft);
+  padding:12px 16px;border-radius:0 var(--r) var(--r) 0;
+  font-size:var(--fs-s);color:#1f4f4b;margin:14px 0;
+}
+.fact-note{font-size:var(--fs-xs);color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:16px}
+.aside-nav{position:sticky;top:calc(var(--ann-h) + var(--hdr-h) + 16px)}
+.aside-nav ul{list-style:none;padding:0;margin:0;font-size:var(--fs-s)}
+.aside-nav a{display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--ink-2);border-radius:0 6px 6px 0}
+.aside-nav a:hover{background:var(--accent-soft);text-decoration:none}
+.aside-nav a.on{border-left-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+
+/* steps */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{position:relative;padding-left:46px;font-size:var(--fs-s)}
+.steps li::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  position:absolute;left:0;top:2px;width:32px;height:32px;
+  display:grid;place-items:center;border-radius:50%;
+  background:var(--ink);color:var(--gold);font-size:var(--fs-xs);font-weight:700;
+}
+.steps b{display:block;color:var(--ink);font-size:.95rem}
+
+/* faq */
+details{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  padding:0;margin-bottom:10px;
+}
+details[open]{border-color:#e0c9a2;box-shadow:var(--sh)}
+summary{
+  cursor:pointer;padding:13px 16px;font-weight:600;color:var(--ink);
+  list-style:none;position:relative;padding-right:42px;font-size:.96rem;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  color:var(--accent);font-size:1.1rem;font-weight:400;
+}
+details[open] summary::after{content:"–"}
+details .ans{padding:0 16px 14px;font-size:var(--fs-s);color:var(--ink-2)}
+
+/* comments */
+.cmts{display:grid;gap:14px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:700;color:#fff;flex:0 0 auto}
+.cmt-top b{font-size:var(--fs-s);color:var(--ink)}
+.cmt-top time{font-size:var(--fs-xs);color:var(--muted);margin-left:auto}
+.cmt p{font-size:var(--fs-s);margin:0}
+.cmt .ref{font-size:var(--fs-xs);color:var(--teal);background:var(--teal-soft);border-radius:4px;padding:1px 6px;display:inline-block;margin-top:8px}
+
+/* news + tags */
+.news{list-style:none;padding:0;margin:0}
+.news li{padding:11px 0;border-bottom:1px dashed var(--line);font-size:var(--fs-s)}
+.news li:last-child{border-bottom:0}
+.news time{color:var(--muted);font-size:var(--fs-xs);margin-right:8px;font-variant-numeric:tabular-nums}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags a{background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 11px;font-size:var(--fs-s);color:var(--ink)}
+.tags a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+
+/* ranking */
+.rank{counter-reset:r;list-style:none;padding:0;margin:0}
+.rank li{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);font-size:var(--fs-s)}
+.rank li:last-child{border-bottom:0}
+.rank li::before{counter-increment:r;content:counter(r);font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums}
+.rank .sc{font-size:var(--fs-xs);color:var(--muted)}
+
+/* timeline strip */
+.tline{position:relative;margin:0;padding:0 0 0 22px;list-style:none}
+.tline::before{content:"";position:absolute;left:6px;top:4px;bottom:4px;width:2px;background:linear-gradient(var(--accent),var(--gold))}
+.tline li{position:relative;padding-bottom:14px;font-size:var(--fs-s)}
+.tline li::before{content:"";position:absolute;left:-22px;top:7px;width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid var(--accent)}
+.tline b{color:var(--ink)}
+
+/* footer */
+footer{background:var(--ink);color:#cfd6e4;margin-top:20px}
+.ft-in{max-width:1180px;margin:0 auto;padding:clamp(26px,4vw,44px) var(--sp) 18px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px}
+footer h3{color:#fff;font-size:var(--fs-s);letter-spacing:.08em;margin:0 0 10px}
+footer a{color:#cfd6e4;font-size:var(--fs-s)}
+footer a:hover{color:var(--gold)}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:6px}
+.ft-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;margin-bottom:10px}
+.ft-brand svg{width:30px;height:30px}
+.ft-desc{font-size:var(--fs-s);color:#a9b3c7;max-width:32ch;margin:0 0 12px}
+.ft-bottom{border-top:1px solid #34415c;margin-top:6px}
+.ft-bottom div{max-width:1180px;margin:0 auto;padding:14px var(--sp) 22px;font-size:var(--fs-xs);color:#8f9bb3;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* back to top */
+#top-btn{
+  position:fixed;right:16px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:0;
+  background:var(--ink);color:var(--gold);cursor:pointer;
+  box-shadow:0 4px 14px rgba(28,42,74,.3);
+  display:grid;place-items:center;font-size:1.1rem;
+  opacity:0;pointer-events:none;transform:translateY(8px);
+  transition:opacity .2s,transform .2s;
+}
+#top-btn.show{opacity:1;pointer-events:auto;transform:none}
+.no-result{font-size:var(--fs-s);color:var(--accent);padding:8px 0;display:none}
+.hidden{display:none !important}
+
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr}
+  .hero-art{min-height:220px;order:-1}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr}
+  .deep{grid-template-columns:1fr}
+  .aside-nav{position:static;order:2}
+  .feat{grid-template-columns:1fr}
+  .feat-side{border-left:0;border-top:1px solid var(--line)}
+  .ft-in{grid-template-columns:1fr 1fr}
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--line);
+    padding:10px var(--sp);margin:0;box-shadow:var(--sh);
+  }
+  .nav.open{display:flex;flex-direction:column}
+  .nav a{padding:9px 8px}
+  .nav-toggle{display:block}
+  .hdr-in{flex-wrap:nowrap}
+  .brand-name small{display:none}
+}
+@media (max-width:560px){
+  .grid-3,.grid-2,.grid-4{grid-template-columns:1fr}
+  .tl li{grid-template-columns:1fr;gap:2px}
+  .hero h1{font-size:1.6rem}
+  .hero-stats{gap:16px}
+  .ft-in{grid-template-columns:1fr}
+  .search input{width:96px}
+  .btn-entry span{display:none}
+  .btn-entry{padding:8px 10px}
+  .ann{font-size:.76rem}
+  #top-btn{width:40px;height:40px;right:12px;bottom:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="ann" role="region" aria-label="站点更新公告">
+  <span class="dot" aria-hidden="true"></span>
+  <b>禁止的爱善良的小在钱西瓜</b>
+  <span>更新：2026-11-04 第 39 章「转账备注」上线，同日修订人物关系表；11-06 补录两处时间线。</span>
+  <a href="#latest">查看更新</a>
+</div>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/#" aria-label="返回首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1c2a4a"/>
+        <path d="M20 18c-4 8-4 20 0 28" stroke="#e8735a" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M44 18c4 8 4 20 0 28" stroke="#e8735a" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="32" cy="32" r="6" fill="#f2c46b"/>
+      </svg>
+      <span class="brand-name">禁止的爱善良的小在钱西瓜<small>禁忌题材阅读手册</small></span>
+    </a>
+    <button class="nav-toggle" id="navBtn" aria-expanded="false" aria-controls="navMenu">菜单</button>
+    <nav class="nav" id="navMenu" aria-label="主题导航">
+      <a href="#overview">题材概览</a>
+      <a href="#featured">精选推荐</a>
+      <a href="#latest">章节更新</a>
+      <a href="#channels">分类入口</a>
+      <a href="#deepdive">深度解析</a>
+      <a href="#guide">体验指南</a>
+      <a href="#faq">常见疑问</a>
+      <a href="#comments">读者评论</a>
+      <a href="#news">相关资讯</a>
+      <a href="#related">相关推荐</a>
+    </nav>
+    <div class="hdr-side">
+      <form class="search" id="searchForm" role="search">
+        <input type="search" id="q" placeholder="搜索条目" aria-label="站内搜索">
+        <button type="submit" aria-label="提交搜索">查</button>
+      </form>
+      <a class="btn-entry" href="#guide"><span>入门路径</span> →</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 首屏 ============ -->
+  <div class="hero">
+    <div>
+      <span class="hero-eyebrow">禁忌关系 · 金钱线 · 2026 修订版</span>
+      <h1>禁止的爱善良的小在钱西瓜</h1>
+      <p class="hero-desc">一段被家规挡在门外、又被转账记录反复拉回的关系。围绕程家养女程小满与长房次子程砚舟，三十九章里出现过 4 笔大额汇款、2 份体检单、1 张被撕过的门禁卡。这里按人物、章节、时间线三条线索拆开整理，方便核对哪一处是伏笔，哪一处只是误读。</p>
+      <div class="hero-acts">
+        <a class="btn-entry" href="#deepdive">读深度解析</a>
+        <a class="btn-ghost" href="#latest">看 11 月更新</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>39</b><span>已更章节</span></div>
+        <div><b>7</b><span>主要人物</span></div>
+        <div><b>11/04</b><span>最近修订</span></div>
+        <div><b>3</b><span>待解分歧</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="原创插画：两扇半开的门与一枚红色印章">
+      <svg viewBox="0 0 420 360" role="img" aria-label="门廊、信封与转账单组成的抽象构图">
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e8735a" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#f2c46b" stop-opacity=".55"/>
+          </linearGradient>
+        </defs>
+        <g opacity=".16" stroke="#f2c46b" stroke-width="1">
+          <path d="M0 300 Q105 250 210 300 T420 300"/>
+          <path d="M0 320 Q105 270 210 320 T420 320"/>
+        </g>
+        <rect x="58" y="62" width="132" height="234" rx="4" fill="none" stroke="#f2c46b" stroke-width="2.5"/>
+        <rect x="74" y="80" width="100" height="198" rx="3" fill="#f2c46b" opacity=".08"/>
+        <rect x="230" y="112" width="132" height="184" rx="4" fill="none" stroke="#e8735a" stroke-width="2.5"/>
+        <rect x="246" y="130" width="100" height="148" rx="3" fill="#e8735a" opacity=".10"/>
+        <circle cx="196" cy="182" r="5" fill="#f2c46b"/>
+        <circle cx="230" cy="210" r="5" fill="#e8735a"/>
+        <g transform="rotate(-8 210 60)">
+          <rect x="150" y="26" width="122" height="72" rx="4" fill="url(#gA)" opacity=".9"/>
+          <path d="M150 26 L211 68 L272 26" fill="none" stroke="#1c2a4a" stroke-width="2" opacity=".55"/>
+        </g>
+        <g transform="translate(300 52) rotate(12)">
+          <rect x="-26" y="-16" width="52" height="32" rx="3" fill="none" stroke="#e8735a" stroke-width="3"/>
+          <path d="M-18 0 H18 M-8 -8 V8" stroke="#e8735a" stroke-width="2"/>
+        </g>
+        <text x="64" y="330" fill="#f2c46b" font-size="13" opacity=".8">规则 / 汇款 / 门禁</text>
+      </svg>
+      <p class="caption"><span>规则把门关上</span><span>汇款又把门推开一条缝</span></p>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- ============ 1 领域概览 ============ -->
+    <section id="overview" aria-labelledby="h-ov">
+      <div class="sec-h"><h2 id="h-ov">题材概览：三条线拧在一起</h2><span class="sec-tag">OVERVIEW</span></div>
+      <p class="sec-lead">这个故事被反复讨论，不是因为禁忌设定本身，而是因为钱这条线插得太具体。程家规矩、程小满的处境、程砚舟的转账，三样东西各说各话。</p>
+      <div class="grid-3" id="ovGrid">
+        <div class="ov-card">
+          <h3>家规线</h3>
+          <p>程氏老宅的《长房家训》第九条写明：养子女与嫡系通婚者，取消其在程氏基金的受益人资格。这条规则第 6 章首次出现，第 27 章由律师秦蓉再念一遍，措辞一字未改。</p>
+          <div class="meta"><span>首次出现 第6章</span><span>复述 第27章</span></div>
+        </div>
+        <div class="ov-card">
+          <h3>金钱线</h3>
+          <p>程砚舟名下账户向程小满转过 4 笔钱：5 万、12 万、30 万、以及第 38 章的 3.8 万。金额递进不整齐，第 3 笔的 30 万附言只有「学费」两个字，成为读者争议的起点。</p>
+          <div class="meta"><span>共 4 笔</span><span>最大 30 万</span></div>
+        </div>
+        <div class="ov-card">
+          <h3>身份线</h3>
+          <p>程小满的收养手续签于 2009 年，经办人是已故的程家老太太。第 19 章出现一份被涂改的出生日期，第 33 章由派出所旧档补全，两条记录相差 47 天。</p>
+          <div class="meta"><span>收养 2009</span><span>日期差 47 天</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2 精选推荐 ============ -->
+    <section id="featured" aria-labelledby="h-ft">
+      <div class="sec-h"><h2 id="h-ft">精选章节推荐</h2><span class="sec-tag">FEATURED</span></div>
+      <p class="sec-lead">按信息密度挑的六段。初次接触建议从第 12 章入手，那章的人物站位最清楚。</p>
+      <div class="card feat">
+        <div class="feat-main">
+          <div class="kicker">本周主打 · 第 12 章</div>
+          <h3>「三十万不是聘礼」：一次把话说透的夜谈</h3>
+          <p>程砚舟在程小满的出租屋楼下站了四十分钟，最后没上楼，只在微信里发了一句「钱你先用，别提还不还」。这一章交代了他与父亲的第二次冲突，也第一次让读者看见程小满主动退回 12 万的转账截图。</p>
+          <p>整章 2100 字，对话占七成。争议点集中在最后一句：程小满回了「我记着」，没有回「谢谢」。有读者认为这是客套，也有人读出疏离。</p>
+          <a class="btn-ghost" href="#deepdive">看这段的解析</a>
+        </div>
+        <div class="feat-side">
+          <div class="mini-item"><a href="#latest">第 39 章「转账备注」</a><span>11-04 更新 · 新伏笔：附言改成编号</span></div>
+          <div class="mini-item"><a href="#latest">第 37 章「门禁卡」</a><span>10-28 更新 · 门禁记录显示 23:41 进门</span></div>
+          <div class="mini-item"><a href="#comments">第 27 章「律师函」</a><span>秦蓉条款复述 · 读者讨论最多</span></div>
+          <div class="mini-item"><a href="#guide">第 6 章「家训」</a><span>规则原点 · 建议先读</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3 最新更新 ============ -->
+    <section id="latest" aria-labelledby="h-lt">
+      <div class="sec-h"><h2 id="h-lt">最新更新与修订记录</h2><span class="sec-tag">UPDATES</span></div>
+      <p class="sec-lead">更新日志保留原文改动位置。修订只动措辞，不改金额与日期，方便回头核对。</p>
+      <div class="card pad">
+        <ol class="tl" id="latestList">
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <div><h3>第 39 章「转账备注」<span class="tag">新增</span></h3><p>程砚舟第 5 笔转账 1.2 万，附言没有文字，只有一串编号 A-0716。编辑部在文末注里确认该编号对应程氏基金 2009 年的第 7 号档案。</p></div>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <div><h3>人物关系表修订<span class="tag">修订</span></h3><p>把程小满与程砚舟的关系标注从「养兄妹」改为「养兄妹（无血缘，收养手续存疑）」，与第 33 章的派出所旧档对齐。</p></div>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <div><h3>时间线补录<span class="tag">补录</span></h3><p>补齐 2009 年 3 月至 6 月之间四次探视记录，其中一次探视人签名与程老太太笔迹不符，已用拼音标注存疑。</p></div>
+          </li>
+          <li>
+            <time datetime="2026-10-28">10-28</time>
+            <div><h3>第 37 章「门禁卡」<span class="tag">新增</span></h3><p>门禁系统记录 23:41 刷卡进门，卡号尾数 4471。这一章没有交代持卡人是谁，只写「他把卡留在了玄关」。</p></div>
+          </li>
+          <li>
+            <time datetime="2026-10-21">10-21</time>
+            <div><h3>第 36 章「体检单」<span class="tag">新增</span></h3><p>出现两张体检单，一张日期 2024-09-12，一张 2026-09-30。后者血型栏被折叠，读者论坛里贴出的截图也看不清。</p></div>
+          </li>
+        </ol>
+        <p class="no-result" id="noResult">没有匹配的条目，换个词试试，比如「转账」「门禁」「体检单」。</p>
+      </div>
+    </section>
+
+    <!-- ============ 4 分类入口 ============ -->
+    <section id="channels" aria-labelledby="h-ch">
+      <div class="sec-h"><h2 id="h-ch">分类入口：按线索找章节</h2><span class="sec-tag">INDEX</span></div>
+      <p class="sec-lead">十章一档，括号里是该档出现次数最多的可检索词。点任意一条都能进入对应的说明段。</p>
+      <ul class="chans">
+        <li><a href="#deepdive">家规原文对照 <b>6</b></a></li>
+        <li><a href="#deepdive">转账流水整理 <b>5</b></a></li>
+        <li><a href="#guide">收养手续时间线 <b>9</b></a></li>
+        <li><a href="#latest">门禁与探视记录 <b>4</b></a></li>
+        <li><a href="#comments">程砚舟动机讨论 <b>18</b></a></li>
+        <li><a href="#latest">体检单细节 <b>3</b></a></li>
+        <li><a href="#related">秦蓉律师条款解读 <b>7</b></a></li>
+        <li><a href="#overview">程老太太笔迹争议 <b>2</b></a></li>
+        <li><a href="#news">作者访谈与修订说明 <b>5</b></a></li>
+        <li><a href="#related">配角关系图 <b>11</b></a></li>
+        <li><a href="#guide">匿名读者投稿 <b>2</b></a></li>
+        <li><a href="#faq">伏笔与回收清单 <b>14</b></a></li>
+      </ul>
+    </section>
+
+    <!-- ============ 5 深度解析（唯一主体阅读区） ============ -->
+    <section id="deepdive" aria-labelledby="h-dd">
+      <div class="sec-h"><h2 id="h-dd">深度解析：三十万那笔钱到底算什么</h2><span class="sec-tag">ANALYSIS</span></div>
+      <p class="sec-lead">把判断拆成可以核对的几块：哪一章、哪句话、谁在场、有没有改口。结论可以被反驳，依据要摆出来。</p>
+
+      <div class="deep">
+        <article class="article">
+          <h3>一、三次改口：程砚舟对「那笔钱」的三种说法</h3>
+          <p>第 12 章他说「钱你先用，别提还不还」。第 24 章面对父亲质问，改口成「借的，有转账记录」。第 31 章在车里对程小满说「那笔钱本来就不该给」。三次说法分别发生在夜里微信、客厅对峙、以及一次没开灯的车内对话，场景越私密，措辞越含糊。这个变化是判断他动机的关键：公开场合他需要用「借款」保住程小满的受益人身份，私下里却不承认这是借款。</p>
+          <div class="claim"><b>可核对项：</b>第 12 章原文「别提还不还」共 6 字；第 24 章原文「借的」出现在第 3 段第 2 句；第 31 章原文「本来就不该给」出现在章末倒数第 2 段。三处均未删除，修订记录里也没有改动标注。</div>
+          <p>把这三句并排看，就能理解为什么第 38 章又冒出 3.8 万时，读者会分成两派。一派认为他在补偿，一派认为他在绑定。两边都能找到原文，但都缺一份能定罪的材料——小说至今没写借条。</p>
+
+          <h3>二、家训第九条前后措辞的差异</h3>
+          <p>第 6 章引用的家训第九条，原文是「养子女与嫡系通婚者，取消受益人资格」。第 27 章秦蓉复述时加了四个字：「取消其在程氏基金的受益人资格」。多了「程氏基金」这个限定，含义就变了——取消的是基金受益权，未必涉及继承权。这个差异不是笔误，第 27 章末尾秦蓉自己解释了：「家训只约束基金，不约束遗嘱。」</p>
+          <table class="compare">
+            <thead><tr><th>条款出处</th><th>原始措辞</th><th>约束范围</th></tr></thead>
+            <tbody>
+              <tr><td>第 6 章 · 家训手抄本</td><td>取消受益人资格</td><td>未写明范围，可解释为全部受益权</td></tr>
+              <tr><td>第 27 章 · 秦蓉口述</td><td>取消其在程氏基金的受益人资格</td><td>限于程氏基金，不涉及遗嘱与不动产</td></tr>
+              <tr><td>第 33 章 · 派出所旧档附注</td><td>提及收养手续「程序瑕疵」</td><td>未直接引用家训，但影响身份认定</td></tr>
+            </tbody>
+          </table>
+          <p>如果第 33 章的「程序瑕疵」成立，第九条的前提——「养子女」身份——本身就要重新认定。这是目前最有解释空间的一处，也是第 39 章那个编号 A-0716 可能指向的地方。</p>
+
+          <h3>三、四个日期构成的资金轨迹</h3>
+          <p>把四笔转账的到账日期和章节发布日并排：2026-08-19 到账 5 万（第 9 章）；2026-09-02 到账 12 万（第 12 章）；2026-09-28 到账 30 万（第 21 章）；2026-10-30 到账 3.8 万（第 38 章）。间隔分别是 14 天、26 天、32 天。金额和间隔都不规则，看不出固定周期，倒像是每次出事之后补一笔。</p>
+          <div class="quote-card">第 21 章里，程小满收到 30 万那天，程砚舟正在老宅参加家族会。会开到一半他离席，手机屏幕亮过一次，备注是「小满」。这一细节在第 21 章第 4 段，只有一句话，没有后续解释。</div>
+          <p>读者论坛 10 月 9 日的一条长帖统计过这四笔钱与章节冲突点的对应关系，结论是「每一笔都跟着一次家规冲突」。这个统计方法可以复核：四笔到账日前后的三章内，都出现过家训或律师函字样。反例暂时没有。</p>
+
+          <h3>四、三处争议的性质区分</h3>
+          <ul>
+            <li><b>事实：</b>转账金额、日期、附言，原文与修订记录一致，可直接引用。</li>
+            <li><b>回应：</b>程砚舟三次改口的措辞，属于人物自述，未必等于真实动机。</li>
+            <li><b>转述：</b>秦蓉对家训的复述带解释成分，「只约束基金」是她的说法，不是家训原文。</li>
+            <li><b>推测：</b>A-0716 编号指向 2009 年第 7 号档案，目前只有作者在文末注里的一句话，档案内容未展开。</li>
+          </ul>
+          <p class="fact-note">以上原文位置以 2026-11-04 修订版为准。第 39 章之后如有改动，以新修订记录为准。</p>
+        </article>
+
+        <aside class="aside-nav" aria-label="解析内目录">
+          <div class="card pad">
+            <h3 style="font-size:.95rem;margin-bottom:10px">解析内目录</h3>
+            <ul>
+              <li><a href="#deepdive">三次改口</a></li>
+              <li><a href="#deepdive">家训措辞差异</a></li>
+              <li><a href="#deepdive">资金轨迹</a></li>
+              <li><a href="#deepdive">争议性质区分</a></li>
+            </ul>
+            <p style="font-size:var(--fs-xs);color:var(--muted);margin:12px 0 0">标注「可核对」的段落均可在正文找到对应章节，未标注的属于解读。</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 6 体验指南 ============ -->
+    <section id="guide" aria-labelledby="h-gd">
+      <div class="sec-h"><h2 id="h-gd">体验指南：第一次读怎么不走岔</h2><span class="sec-tag">GUIDE</span></div>
+      <p class="sec-lead">四步。顺序按信息依赖排，跳着读也能读，但会错过几处措辞对照。</p>
+      <div class="grid-2">
+        <div class="card pad">
+          <ol class="steps">
+            <li><b>先读第 6 章的家训</b>只有 800 字，但第九条后面所有冲突都从这里长出来。读完在纸上写下「养子女」「受益人资格」两个词。</li>
+            <li><b>跳到第 12 章</b>看程砚舟第一次给钱。注意他没说「借」，也没说「给」。</li>
+            <li><b>回头读第 27 章</b>秦蓉复述条款时加了限定词。把第 6 章和第 27 章的两句话并排，差异就出来了。</li>
+            <li><b>最后读第 33 章</b>派出所旧档补全出生日期，收养手续的「程序瑕疵」在这里第一次落地。</li>
+          </ol>
+        </div>
+        <div class="card pad">
+          <h3 style="font-size:1rem;margin-bottom:10px">三个容易读漏的细节</h3>
+          <ul>
+            <li>第 9 章第一笔 5 万，附言写的是「生活费」，不是「学费」。后面三笔附言都换了说法。</li>
+            <li>第 19 章被涂改的出生日期，涂改痕迹是两道横线，不是涂黑。原文特意写了「两道铅笔横线」。</li>
+            <li>第 37 章门禁记录 23:41 刷卡，但同章前文写程砚舟「十一点整离开老宅」，两处时间差 41 分钟。</li>
+          </ul>
+          <p style="font-size:var(--fs-xs);color:var(--muted);margin:12px 0 0">指南基于 2026-11-04 版章节。新章节上线后顺序可能调整。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7 FAQ ============ -->
+    <section id="faq" aria-labelledby="h-fq">
+      <div class="sec-h"><h2 id="h-fq">常见疑问</h2><span class="sec-tag">FAQ</span></div>
+      <p class="sec-lead">六个被反复问到的问题。答案只写原文能支撑的部分，没写到的就直说没写。</p>
+      <div id="faqList">
+        <details open>
+          <summary>程小满和程砚舟到底有没有血缘关系？</summary>
+          <div class="ans">没有。程小满 2009 年被程家收养，收养手续由程老太太经办，程砚舟是长房次子，两人不存在生物学关联。第 33 章的旧档补全的是收养程序问题，不是血缘问题。原文未出现任何反转血缘的线索。</div>
+        </details>
+        <details>
+          <summary>三十万那笔钱在小说里被定义成什么？</summary>
+          <div class="ans">没有被定义。第 21 章只写「到账 30 万，附言两个字：学费」，没说赠与也没说借款。程砚舟在第 24 章口头说「借的」，但没有借条，程小满也没有回应这句。这一笔的性质至今悬空，是读者分歧最大的点。</div>
+        </details>
+        <details>
+          <summary>家训第九条能取消程小满的继承权吗？</summary>
+          <div class="ans">按第 27 章秦蓉的说法，第九条只约束程氏基金的受益人资格，不约束遗嘱。也就是说它挡的是基金分红，不是遗产。但第 6 章手抄本没有「程氏基金」这个限定，两处措辞不一致，谁的解释有效，小说还没给判决。</div>
+        </details>
+        <details>
+          <summary>第 39 章编号 A-0716 指什么？</summary>
+          <div class="ans">作者在章末注里说它对应程氏基金 2009 年第 7 号档案。档案内容、由谁保存、和收养手续有什么关系，正文都没写。目前只能确认这个编号与 2009 年有关，其他属于推测。</div>
+        </details>
+        <details>
+          <summary>门禁卡尾号 4471 是谁的？</summary>
+          <div class="ans">第 37 章没交代。原文只写「他把卡留在了玄关」，没有点名。这一章之后也没有章节再提 4471。有读者对照第 21 章的门禁时间，但这属于推断，不是原文。</div>
+        </details>
+        <details>
+          <summary>体检单为什么出现两张不同日期？</summary>
+          <div class="ans">第 36 章给了两张：2024-09-12 和 2026-09-30。后一张血型栏被折叠。原文没说折叠原因，也没说两张单子属于谁。这是目前信息最少的一条线，只能确认日期，其他都空着。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ 8 读者评论 ============ -->
+    <section id="comments" aria-labelledby="h-cm">
+      <div class="sec-h"><h2 id="h-cm">读者评论</h2><span class="sec-tag">VOICES</span></div>
+      <p class="sec-lead">挑了六条，语气不一样。有夸的，也有直接说看不下去的。都标了指向的具体章节。</p>
+      <div class="cmts">
+        <div class="cmt">
+          <div class="cmt-top"><span class="avatar" style="background:#c4452f">江</span><b>江边旧书店</b><time datetime="2026-11-05">11-05 21:14</time></div>
+          <p>第 12 章那句「别提还不还」写得真好。六个字里有退路也有台阶，比后面所有解释都管用。</p>
+          <span class="ref">指向 第 12 章</span>
+        </div>
+        <div class="cmt">
+          <div class="cmt-top"><span class="avatar" style="background:#2b6f6a">老</span><b>老陈不熬夜</b><time datetime="2026-11-04">11-04 23:02</time></div>
+          <p>第 39 章就一个编号，正文不到两千字，看完感觉被吊着。A-0716 到底什么时候展开，别又拖十章。</p>
+          <span class="ref">指向 第 39 章</span>
+        </div>
+        <div class="cmt">
+          <div class="cmt-top"><span class="avatar" style="background:#b8873c">南</span><b>南楼七号</b><time datetime="2026-11-03">11-03 09:41</time></div>
+          <p>说实话第 27 章秦蓉那段有点硬。一个律师在家族会上主动解释「只约束基金」，现实里不会这么好心。为了给读者递信息，人物就变得不像人了。</p>
+          <span class="ref">指向 第 27 章</span>
+        </div>
+        <div class="cmt">
+          <div class="cmt-top"><span class="avatar" style="background:#3a4763">柚</span><b>柚子茶半糖</b><time datetime="2026-11-02">11-02 18:20</time></div>
+          <p>门禁 23:41 和「十一点整离开」差 41 分钟，我拿笔记下来对着看了三遍，是真的对不上。这种细节我愿意信。</p>
+          <span class="ref">指向 第 37 章</span>
+        </div>
+        <div class="cmt">
+          <div class="cmt-top"><span class="avatar" style="background:#c4452f">搁</span><b>搁浅的鱼</b><time datetime="2026-10-30">10-30 12:55</time></div>
+          <p>第 36 章的体检单是我目前最不满意的处理。两张单子，一张血型被折叠，然后就没然后了。要么别放，要么放完说清楚，卡在中间最难受。</p>
+          <span class="ref">指向 第 36 章</span>
+        </div>
+        <div class="cmt">
+          <div class="cmt-top"><span class="avatar" style="background:#2b6f6a">一</span><b>一行白鹭</b><time datetime="2026-10-26">10-26 15:08</time></div>
+          <p>读第 31 章车内那段，程砚舟说「那笔钱本来就不该给」，语气其实挺冷的。这不像补偿，更像后悔。三十万的性质我站借款那一派。</p>
+          <span class="ref">指向 第 31 章</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9 相关资讯 ============ -->
+    <section id="news" aria-labelledby="h-nw">
+      <div class="sec-h"><h2 id="h-nw">相关资讯</h2><span class="sec-tag">NEWS</span></div>
+      <p class="sec-lead">作者访谈、修订说明、以及读者整理的对照表。日期都在 2026 年 10 月之后。</p>
+      <div class="card pad">
+        <ul class="news">
+          <li><time datetime="2026-11-06">11-06</time>作者在访谈里说第 39 章的编号「本来想放到第 44 章再用」，是编辑建议提前的。</li>
+          <li><time datetime="2026-11-04">11-04</time>人物关系表把「养兄妹」改成「养兄妹（无血缘，收养手续存疑）」，与第 33 章对齐。</li>
+          <li><time datetime="2026-10-28">10-28</time>第 37 章上线后，读者论坛出现一份门禁时间对照表，截至 10-31 更新到第三版。</li>
+          <li><time datetime="2026-10-21">10-21</time>第 36 章体检单日期公布，读者注意到两个日期相隔正好 749 天。</li>
+          <li><time datetime="2026-10-14">10-14</time>作者在评论区回复读者，确认家训第九条「不改，但会被解释」。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 10 相关推荐 ============ -->
+    <section id="related" aria-labelledby="h-rl">
+      <div class="sec-h"><h2 id="h-rl">相关推荐</h2><span class="sec-tag">RELATED</span></div>
+      <p class="sec-lead">如果对金钱与规则夹住关系这类题材有兴趣，下面几条线索可以顺着读。</p>
+      <ul class="tags">
+        <li><a href="#deepdive">程砚舟转账流水整理</a></li>
+        <li><a href="#faq">家训第九条解读</a></li>
+        <li><a href="#guide">收养手续时间线</a></li>
+        <li><a href="#latest">门禁记录 23:41</a></li>
+        <li><a href="#comments">第 27 章律师条款争议</a></li>
+        <li><a href="#deepdive">三十万到底是借还是给</a></li>
+        <li><a href="#faq">A-0716 编号线索</a></li>
+        <li><a href="#overview">程老太太笔迹存疑</a></li>
+        <li><a href="#related">配角秦蓉人物小传</a></li>
+        <li><a href="#guide">体检单两张日期对照</a></li>
+      </ul>
+    </section>
+
+    <!-- ============ 11 补充板块：榜单 ============ -->
+    <section id="ranking" aria-labelledby="h-rk">
+      <div class="sec-h"><h2 id="h-rk">章节信息密度榜</h2><span class="sec-tag">RANKING</span></div>
+      <p class="sec-lead">按可核对信息点数量排。评分只算原文能查到的金额、日期、次数，不算读者解读。</p>
+      <div class="split">
+        <div class="card pad">
+          <ol class="rank">
+            <li><span>第 33 章「派出所旧档」<br><span class="sc">出生日期、收养编号、程序瑕疵、47 天差、经办人签名</span></span><span class="sc">9 项</span></li>
+            <li><span>第 21 章「三十万」<br><span class="sc">到账日、金额、附言、离席时间、备注名</span></span><span class="sc">8 项</span></li>
+            <li><span>第 12 章「别提还不还」<br><span class="sc">微信原文、时长 40 分钟、退回 12 万截图</span></span><span class="sc">7 项</span></li>
+            <li><span>第 37 章「门禁卡」<br><span class="sc">23:41、卡号尾数 4471、离开时间 11:00</span></span><span class="sc">6 项</span></li>
+            <li><span>第 36 章「体检单」<br><span class="sc">两个日期、折叠血型、749 天间隔</span></span><span class="sc">5 项</span></li>
+          </ol>
+        </div>
+        <div class="card pad">
+          <h3 style="font-size:1rem;margin-bottom:8px">时间线：2026 年 9 月至 11 月</h3>
+          <ul class="tline">
+            <li><b>09-02</b> 第 12 章，12 万到账</li>
+            <li><b>09-28</b> 第 21 章，30 万到账</li>
+            <li><b>10-21</b> 第 36 章，体检单释出</li>
+            <li><b>10-28</b> 第 37 章，门禁记录 23:41</li>
+            <li><b>10-30</b> 第 38 章，3.8 万到账</li>
+            <li><b>11-04</b> 第 39 章，编号 A-0716</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="ft-in">
+    <div>
+      <div class="ft-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#e8735a"/>
+          <path d="M20 18c-4 8-4 20 0 28" stroke="#1c2a4a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M44 18c4 8 4 20 0 28" stroke="#1c2a4a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="6" fill="#f2c46b"/>
+        </svg>
+        <span>禁止的爱善良的小在钱西瓜</span>
+      </div>
+      <p class="ft-desc">把规则、金钱、身份三条线摊开对照的阅读笔记站。原文收录、章节索引、可核对的原文位置。</p>
+    </div>
+    <div>
+      <h3>章节</h3>
+      <ul>
+        <li><a href="#latest">最新更新</a></li>
+        <li><a href="#featured">精选推荐</a></li>
+        <li><a href="#ranking">信息密度榜</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>线索</h3>
+      <ul>
+        <li><a href="#deepdive">家训条款</a></li>
+        <li><a href="#deepdive">转账记录</a></li>
+        <li><a href="#guide">收养时间线</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>互动</h3>
+      <ul>
+        <li><a href="#faq">常见疑问</a></li>
+        <li><a href="#comments">读者评论</a></li>
+        <li><a href="#related">相关推荐</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div>
+      <span>示例数据说明：站点内容为示例条目，人物、金额、日期均为虚构，仅供阅读参考。</span>
+      <span>更新时间 2026-11-06 · 对应正文「时间线补录」</span>
+    </div>
+    <div>
+      <span>© 2026 禁止的爱善良的小在钱西瓜阅读手册</span>
+    </div>
+  </div>
+</footer>
+
+<button id="top-btn" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<div hidden id="searchScope"></div>
+
+<script>
+(function(){
+  var navBtn = document.getElementById('navBtn');
+  var navMenu = document.getElementById('navMenu');
+  if(navBtn && navMenu){
+    navBtn.addEventListener('click', function(){
+      var open = navMenu.classList.toggle('open');
+      navBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navBtn.textContent = open ? '收起' : '菜单';
+    });
+    navMenu.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 960){
+        navMenu.classList.remove('open');
+        navBtn.setAttribute('aria-expanded','false');
+        navBtn.textContent = '菜单';
+      }
+    });
+  }
+
+  var topBtn = document.getElementById('top-btn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ topBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 滚动高亮侧栏与页头导航
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.aside-nav a, .nav a'));
+  var targets = navLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function sync(){
+    var y = window.scrollY + 160;
+    var current = null;
+    targets.forEach(function(t){
+      if(t && t.offsetTop <= y){ current = t.id; }
+    });
+    navLinks.forEach(function(a){
+      var id = a.getAttribute('href').replace('/#','');
+      a.classList.toggle('on', id === current);
+    });
+  }
+  window.addEventListener('scroll', sync, {passive:true});
+  sync();
+
+  // 本地搜索
+  var form = document.getElementById('searchForm');
+  var q = document.getElementById('q');
+  var noResult = document.getElementById('noResult');
+  var searchable = Array.prototype.slice.call(document.querySelectorAll('#latestList li, #faqList details, .cmt, .news li, .ov-card, .mini-item, .tags a, .rank li'));
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var kw = (q.value || '').trim().toLowerCase();
+    if(!kw){
+      searchable.forEach(function(el){ el.classList.remove('hidden'); });
+      noResult.style.display = 'none';
+      return;
+    }
+    var hit = 0;
+    searchable.forEach(function(el){
+      var txt = el.textContent.toLowerCase();
+      if(txt.indexOf(kw) > -1){ el.classList.remove('hidden'); hit++; }
+      else { el.classList.add('hidden'); }
+    });
+    noResult.style.display = hit ? 'none' : 'block';
+    var first = document.querySelector('#latest .card');
+    if(hit && first){ first.scrollIntoView({behavior:'smooth', block:'start'}); }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "禁止的爱善良的小在钱西瓜",
+  "description": "围绕禁忌关系、家规条款、转账记录与收养手续展开的章节索引与原文对照站。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "程小满和程砚舟到底有没有血缘关系？",
+      "acceptedAnswer": {"@type": "Answer", "text": "没有。程小满 2009 年被程家收养，程砚舟是长房次子，两人不存在生物学关联。第 33 章补全的是收养程序问题，不是血缘问题。"}
+    },
+    {
+      "@type": "Question",
+      "name": "三十万那笔钱在小说里被定义成什么？",
+      "acceptedAnswer": {"@type": "Answer", "text": "没有被定义。第 21 章只写到账 30 万、附言学费，程砚舟在第 24 章口头说借的，但没有借条，程小满也没有回应。"}
+    },
+    {
+      "@type": "Question",
+      "name": "家训第九条能取消程小满的继承权吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "按第 27 章秦蓉的说法，第九条只约束程氏基金的受益人资格，不约束遗嘱。第 6 章手抄本没有基金限定，两处措辞不一致。"}
+    },
+    {
+      "@type": "Question",
+      "name": "第 39 章编号 A-0716 指什么？",
+      "acceptedAnswer": {"@type": "Answer", "text": "作者在章末注里说它对应程氏基金 2009 年第 7 号档案。档案内容与收养手续的关系正文尚未展开。"}
+    },
+    {
+      "@type": "Question",
+      "name": "门禁卡尾号 4471 是谁的？",
+      "acceptedAnswer": {"@type": "Answer", "text": "第 37 章没有交代。原文只写他把卡留在了玄关，之后章节没有再提 4471。"}
+    },
+    {
+      "@type": "Question",
+      "name": "体检单为什么出现两张不同日期？",
+      "acceptedAnswer": {"@type": "Answer", "text": "第 36 章给出 2024-09-12 与 2026-09-30 两张，后一张血型栏被折叠，原文没有说明原因和归属。"}
+    }
+  ]
+}
+</script>
+</body>
+          </html>
